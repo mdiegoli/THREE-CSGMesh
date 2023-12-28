@@ -57,7 +57,7 @@ class App3 {
         let transformControls = this.transformControls = new TransformControls(camera,renderer.domElement);
         transformControls.translationSnap = 0.05;
         transformControls.rotationSnap = Math.PI / 16;
-        scene.add(transformControls);
+        //scene.add(transformControls);
         /*
         let gridmat = Environment.mkMat(0x404040)
         gridmat.transparent = true;
@@ -199,7 +199,7 @@ class App3 {
         let groundProxy = new THREE.Mesh(new THREE.PlaneGeometry(1000,1000))
         groundProxy.rotation.x = Math.PI * -.5
         groundProxy.updateMatrixWorld()
-
+        this.floor = groundProxy
         let v0 = new THREE.Vector3();
 
         let mouseChangeEvent = new Event('mouseChange')
